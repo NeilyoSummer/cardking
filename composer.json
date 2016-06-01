@@ -1,0 +1,10 @@
+{
+    "require": {
+        "jeroendesloovere/vcard": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Card\\CardSDK\\": "src/"
+        }
+    }
+}
