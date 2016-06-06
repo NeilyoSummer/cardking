@@ -45,7 +45,7 @@ class CardKing
      */
     public function get_updated_card_list($start_time)
     {
-        $url   = $this->getOpenApi() . '/get_card_list';
+        $url   = $this->getOpenApi() . '/get_updated_card_list';
         $param = ['app_secret' => $this->getAppSecret(), 'start_time' => $start_time];
         $url .= '?' . http_build_query($param);
         $result = $this->getCurl($url);
@@ -79,7 +79,7 @@ class CardKing
      */
     public function get_card_tag($file_name)
     {
-        $url   = $this->getOpenApi() . '/get_card_list';
+        $url   = $this->getOpenApi() . '/get_card_tag';
         $param = ['app_secret' => $this->getAppSecret(), 'file_name' => $file_name];
         $url .= '?' . http_build_query($param);
         $result = $this->getCurl($url);
@@ -114,7 +114,7 @@ class CardKing
      */
     public function get_card_note($file_name)
     {
-        $url   = $this->getOpenApi() . '/get_card_image';
+        $url   = $this->getOpenApi() . '/get_card_note';
         $param = ['app_secret' => $this->getAppSecret(), 'file_name' => $file_name];
         $url .= '?' . http_build_query($param);
 
